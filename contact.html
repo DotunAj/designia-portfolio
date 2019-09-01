@@ -17,12 +17,17 @@
                     <div class="logo"
                         style="background: url(./assets/images/logoe.svg);background-repeat: no-repeat;background-position: top left;background-size: contain;">
                         <a href="#">designia.</a></div>
-                    <ul>
-                        <li><a href="./index.html">About</a></li>
-                        <li><a href="./skills.html">Skills</a></li>
-                        <li><a href="./portfolio.html">Portfolio</a></li>
-                        <li><a class="current" href="#">contact</a></li>
-                    </ul>
+                    <div class="hamburger">
+                        <div></div>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="./index.html">About</a></li>
+                            <li><a href="./skills.html">Skills</a></li>
+                            <li><a href="./portfolio.html">Portfolio</a></li>
+                            <li><a class="current" href="#">contact</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </header>
             <section class="portfolio-content">
@@ -39,6 +44,15 @@
             </section>
         </div>
     </div>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const menu = document.querySelector(".menu");
+        const container = document.querySelector(".container");
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("close");
+            container.classList.toggle("move-container");
+        });
+    </script>
 
 </body>
 
