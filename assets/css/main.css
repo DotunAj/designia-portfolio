@@ -147,7 +147,7 @@ nav ul .current:after {
 }
 
 .skills-content {
-  width: 70%;
+  width: calc(70% - 60px);
   margin: 100px 30px;
 }
 
@@ -199,7 +199,7 @@ nav ul .current:after {
   padding: 50px 30px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 210px 210px;
+  grid-auto-rows: 210px;
   grid-gap: 15px;
 }
 
@@ -357,6 +357,8 @@ nav ul .current:after {
     margin-bottom: 60px;
   }
 
+  /* contact page */
+
   .contact-form form {
     display: grid;
     grid-template-columns: 1fr;
@@ -366,12 +368,28 @@ nav ul .current:after {
     grid-column: auto;
   }
 
-  .form-input {
-    font-size: 0.9em;
+  /* portfolio page */
+
+  .portfolio-body {
+    background-image: linear-gradient(0deg, #4b7cec, #4b7cec);
   }
 
-  .form-input::placeholder {
-    font-size: 0.9em;
+  .pt-images {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-content {
+    width: calc(100% - 20px);
+    margin: 20px 10px;
+  }
+
+  .sk-levels {
+    grid-template-columns: 250px;
+    grid-gap: 10px;
+  }
+
+  .sk-level {
+    height: 120px;
   }
 }
 
